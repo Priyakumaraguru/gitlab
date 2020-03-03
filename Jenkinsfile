@@ -34,7 +34,7 @@ stages{
             // influx()
 
                  }
-         }*/
+         }
     
     
      stage('merge_req'){
@@ -47,8 +47,8 @@ stages{
          merge_gitlab.commit(ids)
             }
         }
-     }
-/*stage('merge_req'){
+     }*/
+stage('commits'){
         steps{
         
             script
@@ -58,7 +58,7 @@ stages{
      commits_gitlabb.commit(ids,jsondata)
             }
         }
-     }*/
+     }
 
 }
 }
