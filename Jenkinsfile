@@ -55,7 +55,7 @@ stage('commits'){
             {
             def ids= commits_gitlabb(jsondata)
          println(ids)
-     def gitlab=commits_gitlabb.commit(ids,jsondata)
+     String gitlab=commits_gitlabb.commit(ids,jsondata)
                 //println(gitlab)
                 gitlab_team(gitlab)
             }
