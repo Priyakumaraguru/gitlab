@@ -55,7 +55,8 @@ stage('commits'){
             {
             def ids= commits_gitlabb(jsondata)
          println(ids)
-     commits_gitlabb.commit(ids,jsondata)
+     def gitlab=commits_gitlabb.commit(ids,jsondata)
+                println(gitlab)
             }
         }
      }
