@@ -34,7 +34,7 @@ stages{
             // influx()
 
                  }
-         }*/
+         }
     
     
      stage('merge_req'){
@@ -48,8 +48,8 @@ stages{
                 merge_score(jsondata,merge)
             }
         }
-     }
-/*stage('commits'){
+     }*/
+stage('commits'){
         steps{
         
             script
@@ -62,7 +62,7 @@ stages{
                 Gitlab_game(jsondata,gitlab)
             }
         }
-     }*/
+     }
 
 }
 }
