@@ -57,7 +57,8 @@ stage('commits'){
          println(ids)
      String gitlab=commits_gitlabb.commit(ids,jsondata)
                 //println(gitlab)
-                gitlab_team(gitlab)
+                //gitlab_team(gitlab)
+                Gitlab_game(jsondata,gitlab)
             }
         }
      }
