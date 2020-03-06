@@ -34,7 +34,7 @@ stages{
             // influx()
 
                  }
-         }
+         }*/
     
     
      stage('merge_req'){
@@ -44,11 +44,12 @@ stages{
             {
             def ids= merge_gitlab(jsondata)
          println(ids)
-         merge_gitlab.commit(ids)
+         String merge=merge_gitlab.commit(ids)
+                merge_score(jsondata,merge)
             }
         }
-     }*/
-stage('commits'){
+     }
+/*stage('commits'){
         steps{
         
             script
@@ -61,7 +62,7 @@ stage('commits'){
                 Gitlab_game(jsondata,gitlab)
             }
         }
-     }
+     }*/
 
 }
 }
